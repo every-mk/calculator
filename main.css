@@ -1,0 +1,82 @@
+/* application ================================ */
+:root {
+  --color-gray: #555555;
+  --color-silver: #dddddd;
+}
+
+* {
+  box-sizing: border-box;                       /* 要素幅にボーダーを含める. */
+}
+
+html {
+  -webkit-text-size-adjust: 100%;                /* テキストサイズの自動調整をオフにする. */
+}
+
+body, div, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;          /* ジャギーを除去する. */
+  font-family: "游ゴシック", YuGothic;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+ul {
+  list-style: none;
+}
+
+/* calculator ================================= */
+.calulator {
+  margin: 45px auto 0;
+  width: 300px;
+  overflow: hidden;
+}
+
+.calulator_result {
+  margin-bottom: 3px;
+  padding: 0 5px;
+  height: 36px;                                /* テキストを改行させない為に固定する. */
+  min-width: 100%;
+  float: right;
+  background-color: #000;
+  font-size: 24px;
+  color: #fff;
+  text-align: right;
+}
+
+.calulator_buttons {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.calulator_button_list {
+  margin-bottom: 3px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.calulator_button_list:last-child {
+  margin-bottom: 0;
+}
+
+.calulator_button_list_item {
+  margin-right: 3px;
+  width: 100%;
+  line-height: 30px;
+  border: 1px solid var(--color-gray);
+  border-radius:5px;
+  background-color: var(--color-silver);
+  text-align: center;
+}
+
+.calulator_button_list_item:hover {
+  border-color: blue;
+}
+
+.calulator_button_list_item:last-child {
+  margin-right: 0;
+}
