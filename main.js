@@ -84,12 +84,6 @@ $(document).ready(function()
           formula = key;
           break;
         }
-        else if (check_operator_priority(formula.slice(-1)) == 1)
-        {
-          /* 右辺が乗算,除算であれば追記する. */
-          formula += key;
-          break;
-        }
       case "+":
       case "*":
       case "/":
